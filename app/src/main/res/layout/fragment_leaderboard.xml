@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragments.LeaderboardFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fitscorelayout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/lightning">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitscore"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="6dp"
+                android:textSize="30dp">
+
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/personalFitscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:textSize="30dp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/goldBar"
+        android:layout_width="100dp"
+        android:layout_height="230dp"
+        android:layout_above="@+id/leaderboardBg"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/goldlayout">
+
+        <LinearLayout
+            android:id="@+id/numberone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/circle"
+                android:textColor="#ffd94a">
+            </TextView>
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textSize="20dp"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/points1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="right"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white">
+            </TextView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_toLeftOf="@id/goldBar"
+        android:id="@+id/silverBar"
+        android:layout_width="100dp"
+        android:layout_height="190dp"
+        android:background="@drawable/silverlayout"
+        android:layout_above="@+id/leaderboardBg">
+
+        <LinearLayout
+            android:id="@+id/numbertwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/circle"
+                android:textColor="#dcddcd">
+            </TextView>
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="1dp"
+                android:textStyle="bold"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/points2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="right"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white">
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_toRightOf="@id/goldBar"
+        android:id="@+id/copperBar"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:background="@drawable/copperlayout"
+        android:layout_above="@+id/leaderboardBg">
+
+        <LinearLayout
+            android:id="@+id/numberthree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:background="@drawable/circle"
+                android:textColor="#ffd94a">
+            </TextView>
+
+            <TextView
+                android:id="@+id/name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textSize="20dp"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/points3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="right"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white">
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/leaderboardBg"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/leaderboardlayout">
+
+        <LinearLayout
+            android:id="@+id/numberfour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:textSize="30dp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/name4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Full Name"
+                android:textSize="30dp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/points4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+                android:textSize="30dp"
+                android:textColor="@color/black">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/numberfour"
+            android:id="@+id/numberfive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textSize="30dp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/name5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Full Name"
+                android:textSize="30dp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/points5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+                android:textSize="30dp"
+                android:textColor="@color/black">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/numberfive"
+            android:id="@+id/numbersix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:textSize="30dp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/name6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Full Name"
+                android:textSize="30dp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/points6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+                android:textSize="30dp"
+                android:textColor="@color/black">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/numbersix"
+            android:id="@+id/numberseven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:textSize="30dp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/name7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Full Name"
+                android:textSize="30dp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/points7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+                android:textSize="30dp"
+                android:textColor="@color/black">
+            </TextView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

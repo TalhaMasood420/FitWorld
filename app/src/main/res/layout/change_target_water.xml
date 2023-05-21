@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:theme="@style/Theme.My_Custom_Theme"
+        android:paddingVertical="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/MyTextInputLayout"
+            android:id="@+id/filledTextField2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="6dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userinput_change_waterTarget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Change Daily Target"
+                android:fontFamily="@font/montserrat_medium"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/cancel6"
+            android:layout_width="100dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcorners_bg_transparent"
+            android:elevation="20dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+    <Button
+        android:id="@+id/save_change_waterTarget"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundcorners_bg_transparent"
+        android:backgroundTint="#A4DEFF"
+        android:elevation="20dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Change"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+<!--        val items = arrayOf("Item 1", "Item 2", "Item 3", "Item 4")-->
+<!--        (textField.editText as? MaterialAutoCompleteTextView)?.setSimpleItems(items)-->
+
+<!--        val items = listOf("Item 1", "Item 2", "Item 3", "Item 4")-->
+<!--        val adapter = ArrayAdapter(requireContext(), R.layout.list_item, items)-->
+<!--        (textField.editText as? AutoCompleteTextView)?.setAdapter(adapter)-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--        style="@style/Widget.Material3.TextInputLayout.*.ExposedDropdownMenu">-->
+
+<!--        <AutoCompleteTextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="none"-->
+<!--            app:simpleItems="@array/simple_items"-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

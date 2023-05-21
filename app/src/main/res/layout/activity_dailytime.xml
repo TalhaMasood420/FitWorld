@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Daily Water Reminder"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TimePicker
+        android:id="@+id/timeView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundcorners_bg_black"
+        android:timePickerMode="spinner" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/cancel1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/roundcorners_bg_transparent"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Cancel"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+        <Button
+            android:id="@+id/save1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcorners_bg_transparent"
+            android:backgroundTint="#EBFFDF"
+            android:elevation="20dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</LinearLayout>
